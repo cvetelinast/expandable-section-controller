@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/DarkViewScene.unity
+    guid: 09513399dbedc0a49b6345e939360916
   m_configObjects: {}
