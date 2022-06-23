@@ -315,6 +315,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 707b8473305c22847820d7814370ad89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  background: {fileID: 6913767153537183118}
+  arrowIcon: {fileID: 6913767151883297644}
+  sectionTitle: {fileID: 6913767152896375567}
   arrow: {fileID: 6913767153537183113}
   arrowCustomAnimator: {fileID: 7781032070798594046}
   itemControllers:

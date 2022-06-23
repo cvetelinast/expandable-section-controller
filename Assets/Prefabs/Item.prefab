@@ -306,6 +306,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customAnimator: {fileID: 2471435376841746853}
+  icon: {fileID: 5377493529411423647}
+  background: {fileID: 5377493530694706315}
+  itemLabel: {fileID: 5377493528663632449}
 --- !u!114 &2471435376841746853
 MonoBehaviour:
   m_ObjectHideFlags: 0
