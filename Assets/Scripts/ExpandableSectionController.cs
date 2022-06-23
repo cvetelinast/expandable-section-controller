@@ -37,6 +37,16 @@ public class ExpandableSectionController : MonoBehaviour {
         }
     }
 
+    public void ChangeItemColors(Color sectionItemsBackgroundColor, Color sectionItemsLabelsColor) {
+        foreach (var c in itemControllers) {
+            if (c != null) {
+                c.ChangeBackground(sectionItemsBackgroundColor);
+                c.ChangeLabelColor(sectionItemsLabelsColor);
+                c.ChangeIconColor(sectionItemsLabelsColor);
+            }
+        }
+    }
+
     private void OnEnable() {
         arrow.onClick.AddListener(OnArrowClicked);
     }

@@ -26,8 +26,6 @@ public class UIColorModifier : MonoBehaviour {
 
     [SerializeField] private List<ExpandableSectionController> expandableSectionControllers;
 
-    [SerializeField] private List<ItemController> itemControllers;
-
     void Update() {
         if (titleText != null) {
             titleText.color = titleColor;
@@ -37,20 +35,14 @@ public class UIColorModifier : MonoBehaviour {
             background.color = backgroundColor;
         }
 
-        for (int i = 0; i < expandableSectionControllers.Count; i++) {
-            if (expandableSectionControllers[i] != null) {
-                expandableSectionControllers[i].ChangeSectionTitleColor(sectionTitlesColor);
-                expandableSectionControllers[i].ChangeArrowIconColor(sectionTitlesColor);
-                expandableSectionControllers[i].ChangeBackground(sectionTitlesBackgroundColor);
+        foreach (var e in expandableSectionControllers) {
+            if (e != null) {
+                e.ChangeSectionTitleColor(sectionTitlesColor);
+                e.ChangeArrowIconColor(sectionTitlesColor);
+                e.ChangeBackground(sectionTitlesBackgroundColor);
+                e.ChangeItemColors(sectionItemsBackgroundColor, sectionItemsLabelsColor);
             }
         }
 
-        for (int i = 0; i < itemControllers.Count; i++) {
-            if (itemControllers[i] != null) {
-                itemControllers[i].ChangeBackground(sectionItemsBackgroundColor);
-                itemControllers[i].ChangeLabelColor(sectionItemsLabelsColor);
-                itemControllers[i].ChangeIconColor(sectionItemsLabelsColor);
-            }
-        }
     }
 }
